@@ -1,0 +1,19 @@
+// This file is intended to automatically launch your Chrome debugger! It's not necessary, but it removes several steps for you! If you do not want this file, don't worry about deleting it -- everything will still work fine.
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Jest Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceRoot}/node_modules/.bin/jest",
+        "--runInBand"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229
+    }
+  ]
+}
